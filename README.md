@@ -12,7 +12,41 @@ The aim was to identify key factors leading to customer churn, uncover revenue-i
 
 https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset/discussion/532881
 
-Tables:
+100k rows.
+
+### Table: 
+
+A) Churn_Modelling
+
+1. Row Number
+2. CustomerID
+3. Surname
+4. CreditScore
+5. Geography
+6. Gender
+7. Age
+8. Tenure
+9. Balance
+10. NumofProducts
+11. HasCrCard
+12. IsActiveMember
+13. EstimatedSalary
+14. Exited
+
+B) Products
+
+1. CustomerId
+2. Product_type
+3. Enrollment_Date
+4. Status
+
+C) Transactions
+
+1. Transaction_id
+2. Customer_id
+3. Transaction_date
+4. Transaction_Type
+5. Amount
 
 ## 3. Data Cleaning & Transformation
 
@@ -21,7 +55,7 @@ Tables:
 ### Python Cleaning Steps:
 
 
-### SQL Cleaning Example:
+### SQL Cleaning Steps:
 
 -- Remove duplicate records
 

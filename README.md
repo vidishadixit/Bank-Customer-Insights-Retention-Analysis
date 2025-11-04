@@ -16,7 +16,7 @@ https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dat
 
 ### Table: 
 
-A) Churn_Modelling
+A) Customers
 
 1. Row Number
 2. CustomerID
@@ -61,6 +61,9 @@ C) Transactions
 
 -- Handle null regions
 
+### Insights after cleaning:
+1. During data validation, I identified 322 records where the customer’s tenure implied they opened accounts as minors (Age–Tenure < 18). I confirmed this wasn’t a known business scenario, so I removed those rows to maintain data integrity. I also noted it in my data quality report to ensure transparency.
+2. Removed the row number cause it felt unnecessary for the analysis.
 
 ## 4. Exploratory Data Analysis (EDA)
 

@@ -63,9 +63,16 @@ C) Transactions
 
 ### Insights after cleaning:
 1. During data validation, I identified 322 records where the customer’s tenure implied they opened accounts as minors (Age–Tenure < 18). I confirmed this wasn’t a known business scenario, so I removed those rows to maintain data integrity. I also noted it in my data quality report to ensure transparency.
-2. Removed the "Row number" column cause it felt unnecessary for the analysis.
+2. Removed the "Row number"  and "Surname" columns cause they felt unnecessary for the analysis.
 3. Checked for null, unique, and duplicate values.
-4. Geography imbalance: Only 3 countries' data is there. France 50%, Germany 25% and Spain 24  % Dataset is heavily skewed.
+4. Geography imbalance: Only 3 countries' data is there. France 50%, Germany 25% and Spain 24%. The dataset is heavily skewed.
+5. Roughly 54% males, 46% females — not severe but relevant if analyzing gender-based churn trends.
+6. Customers under 20 are 4, and over 60 are 464
+7. While analyzing customer financial data, I discovered that ~35% of customers had a recorded balance of zero, including 1,700+ with high income. Since most were still active, I inferred this was a data capture or product-specific issue rather than true inactivity. Instead of dropping them, I flagged and treated zero balances as missing values to preserve integrity while still being able to analyze churn drivers accurately.
+8. Capped outliers in Age, CreditScore, and EstimatedSalary.
+9. Created derived features:
+    Balance_to_Salary_Ratio
+    Product_Engagement_Score = NumOfProducts + IsActiveMember + HasCrCard
 
 ## 4. Exploratory Data Analysis (EDA)
 

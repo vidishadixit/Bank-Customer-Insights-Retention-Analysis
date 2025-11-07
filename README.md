@@ -63,7 +63,9 @@ C) Transactions
 
 ### Insights after cleaning:
 1. During data validation, I identified 322 records where the customer’s tenure implied they opened accounts as minors (Age–Tenure < 18). I confirmed this wasn’t a known business scenario, so I removed those rows to maintain data integrity. I also noted it in my data quality report to ensure transparency.
-2. Removed the row number cause it felt unnecessary for the analysis.
+2. Removed the "Row number" column cause it felt unnecessary for the analysis.
+3. Checked for null, unique, and duplicate values.
+4. Geography imbalance: Only 3 countries' data is there. France 50%, Germany 25% and Spain 24  % Dataset is heavily skewed.
 
 ## 4. Exploratory Data Analysis (EDA)
 

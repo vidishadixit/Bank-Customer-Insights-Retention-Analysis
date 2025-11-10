@@ -73,6 +73,8 @@ C) Transactions
 9. Created derived features:
     Balance_to_Salary_Ratio
     Product_Engagement_Score = NumOfProducts + IsActiveMember + HasCrCard
+10. I performed a detailed anomaly and data integrity check on the product dataset. It showed balanced distribution across five product types, no duplicates or missing data, and around 4,000 inactive product records. However, I identified 822 customers with all products inactive — a key retention risk segment that I flagged for targeted engagement strategies.
+11. 
 
 ## 4. Exploratory Data Analysis (EDA)
 

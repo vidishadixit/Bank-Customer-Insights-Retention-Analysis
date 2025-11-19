@@ -149,33 +149,93 @@ Middle-tenure customers stay
 
 
 ### Power BI Visuals:
+### Page 1 — Customer Overview
+Visuals:
 
+KPI cards:
 
+1. Total Customers
+2. Churn Rate
+3. Avg Balance
+4. Avg Credit Score
+
+Bar chart:
+
+1. Customer Count by Geography
+2. Customer Count by AgeGroup
+
+Donut chart:
+
+Active vs Inactive Members
+
+### Page 2 - Churn Analysis
+
+Visuals:
+
+1. Bar Chart → Churn % by NumOfProducts
+→ will clearly show the 1-product and 3/4-product problem
+
+2. Bar Chart → Churn % by IsActiveMember
+→ shows an inactivity issue
+
+3. Bar Chart → Churn % by CreditBucket
+
+4. Line/Bars → Churn % by Tenure
+
+5. Bar Chart → Churn % by BalanceBucket
+
+6. Scatter Plot: Balance vs Churn
+→ highlight high-balance churners
+
+### Page 3 — Engagement Dashboard
+
+Visuals:
+
+1. Avg Transaction Amount by AgeGroup
+
+2. Transaction Frequency by Geography
+
+3. Correlation scatter
+
+4. Engagement Score vs Churn %
+
+### Page 4 — Customer Segmentation
+
+Customer distribution by:
+
+1. AgeGroup
+2. Geography
+3. Product_Engagement_Score
+4. BalanceBucket
 
 ## 6. Insights & Business Recommendations
 
 Findings:
-
-
+1. Customers with only one product have 28% churn — the highest among all segments.
+2. Inactive customers churn at nearly double the rate of active customers.
+3. Churn is not influenced by geography or transactions, but heavily driven by product engagement.
 
 Recommendations:
 
-
-
-## 7. Discussion Points
-
-Technical Angle:
-
-Talk about Python + SQL for cleaning and joining large datasets.
-
-Explain your EDA and visualization logic (why you chose those KPIs).
-
-Discuss how you validated your findings (cross-verification in Excel/Power BI).
-
-Analytical / Business Angle:
-
-Highlight how you translated data into actions (customer retention strategy).
-
-Quantify your impact (15% retention improvement).
-
-Show structured problem-solving — identifying churn → measuring loss → proposing solutions.
+Customers with 3–4 products have 80–100% churn — extremely alarming.
+    Stop auto-bundling or forced cross-selling immediately
+    Introduce personalized product recommendations using customer profile & behavior
+    Use data-driven eligibility rather than blanket offers
+    Conduct post-offer satisfaction checks for customers with ≥3 products
+Activate Inactive Customers
+    Inactive customers churn at ~27%, nearly twice the rate of active customers.
+        Launch an activation campaign (app login nudges, SMS reminders, small incentives)
+        Offer fee waivers or bonus interest for restarting activity
+        Monthly “inactive customer report” for branch managers
+Strengthen Early Tenure Onboarding (0–1 years churn is high)
+    New customers often leave early due to unmet expectations.
+        First 90-day onboarding program
+        Dedicated Relationship Manager follow-up
+        App tutorials, welcome email flows, personalized offers
+        Survey at 30, 60, 90 days
+Boost Engagement for 1-Product Customers (28% churn)
+    Low engagement = low stickiness.
+        Recommend 1 additional product based on profile (NOT forced cross-sell)
+        Personalized nudges in app (“Customers like you also use…”)
+        Bundle products where relevant (salary account + credit card + UPI cashback)
+        Conduct product education workshops/webinars
